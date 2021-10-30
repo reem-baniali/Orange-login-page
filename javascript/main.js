@@ -12,8 +12,8 @@ let err = document.querySelectorAll(".errMessage");
 //declare re1jex for email
 let regexEmail = /^[A-z0-9._-]+@(gmail|yahoo|hotmail).com$/;
 let regexMobile = /^[0][7][7][0-9]{7}$/
-let regexPass = /^[A-z0-9._-*$@]{6,18}$/;
-//validation function
+let regexPass = /^[A-Z]{6,18}$/;
+//validation functZion
 function validation() {
   if (email.value == "") {
     err[0].textContent = "please add email";
