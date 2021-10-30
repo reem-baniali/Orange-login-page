@@ -11,8 +11,8 @@ let err = document.querySelectorAll(".errMessage");
 
 //declare re1jex for email
 let regexEmail = /^[A-z0-9._-]+@(gmail|yahoo|hotmail).com$/;
-let regexMobile = /^[077][0-9]{7}$/;
-let regexPass = /^[A-z0-9]{6,18}$/;
+let regexMobile = /^[0][7][7][0-9]{7}$/
+let regexPass = /^[A-Z]{6,18}$/;
 //validation function
 function validation() {
   if (email.value == "") {
@@ -43,10 +43,10 @@ function validation() {
     }
   }
 
-  if (check == true) {
-    err[3].innerHTML = "";
+  if (!check.checked) {
+    err[3].innerHTML = "please check this field";
   } else {
-    err[3].innerText = "please check this field";
+    err[3].innerText ="" ;
   }
 }
 
